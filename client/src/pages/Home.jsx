@@ -7,9 +7,9 @@ const Home = () => {
   const [notes, setNotes] = useState([]);
   const [currentNote, setCurrentNote] = useState(null);
 
-  useEffect(() => {
-    fetchNotes();
-  }, []);
+  // useEffect(() => {
+  //   fetchNotes();
+  // }, []);
 
   //TODO-7: Implement fetchNotes as an Arrow function to fetch all notes from the API.
   // Set notes to be the fetched notes using useState.
@@ -36,7 +36,7 @@ const Home = () => {
   const handleUpdateNote = async (note) => {
     try {
       await updateNote(note.id, note.title, note.content);
-      fetchNotes();
+      // fetchNotes();
       setCurrentNote(null);
     } catch (error) {
       console.error("Failed to update note:", error);

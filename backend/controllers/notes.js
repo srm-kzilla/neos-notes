@@ -1,6 +1,8 @@
 import { nanoid } from "nanoid";
 import fs from "fs";
 
+// TODO-5: View this file carefully and see what is happening here
+
 let notes = [];
 if (fs.existsSync("data.json")) {
     notes = JSON.parse(fs.readFileSync("data.json"));

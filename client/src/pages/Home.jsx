@@ -11,7 +11,7 @@ const Home = () => {
   //   fetchNotes();
   // }, []);
 
-  //TODO-7: Implement fetchNotes as an Arrow function to fetch all notes from the API.
+  //TODO-6: Implement fetchNotes as an Arrow function to fetch all notes from the API.
   // Set notes to be the fetched notes using useState.
 
   const addNote = async (note) => {
@@ -58,7 +58,7 @@ const Home = () => {
           </h1>
         ) : (
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            {/* TODO-3: Use the map method on the array notes to display the NoteCard Component for each note. */}
+            {/* TODO-7: Use the map method on the array notes to display the NoteCard Component for each note. */}
           </div>
         )}
       </div>

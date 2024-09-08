@@ -1,0 +1,16 @@
+{
+  "name": "neos-notes",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "npx concurrently --names \"BACKEND,FRONTEND\" \"cd backend/; npm start;\" \"cd client; npm start\"",
+    "install-all": "cd backend/; npm i; cd ../client; npm i"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}

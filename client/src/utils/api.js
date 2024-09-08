@@ -1,6 +1,10 @@
 const API_URL = "http://localhost:8000";
 
-//TODO-6: Write a function getNotes to fetch all notes from the server.
+export const getNotes = async () => {
+    const response = await fetch(API_URL + "/notes");
+    const { data } = await response.json();
+    return data;
+};
 
 export const getNote = async (id) => {
     const response = await fetch(API_URL + "/notes/" + id);

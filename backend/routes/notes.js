@@ -9,10 +9,6 @@ import {
 
 const router = express.Router();
 
-router.get("/", getNotes);
-router.get("/:id", getNote);
-router.post("/", createNote);
-router.put("/:id", updateNote);
-router.delete("/:id", deleteNote);
+// TODO-5: Implement Routes for the notes controller here
 
 export default router;

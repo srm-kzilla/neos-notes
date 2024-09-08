@@ -1,6 +1,6 @@
 const basic = (req, res) => {
-    res.send({
-        message: "basic stuff",
-    });
+    // TODO-4: Implement the controller
+    // You can play around as you wish here
+    res.send({ message: "test" });
 };
 export { basic };
